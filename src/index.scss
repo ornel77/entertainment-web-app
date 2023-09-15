@@ -1,0 +1,36 @@
+@import '../variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+  color: $white;
+  font-family: $font;
+  // font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+button {
+  all: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+// .temp {
+//   display: grid;
+//   place-items: center;
+//   font-size: 64px;
+//   background-color: $gray-color;
+//   border: 3px solid salmon;
+//   width: 100%;
+// }
