@@ -1,0 +1,21 @@
+@import '../../../variables';
+
+
+.root {
+    display: flex;
+    gap: 20px;
+}
+
+.pages {
+    width: 100%;
+    border: 3px solid salmon;
+
+}
+
+@media screen and (max-width: 900px) {
+   .root {
+        display: initial;
+   }
+}
+
+
