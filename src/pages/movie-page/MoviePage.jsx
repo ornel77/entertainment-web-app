@@ -1,12 +1,10 @@
-import React from "react";
-import SearchBar from "../../components/searchbar/SearchBar";
+
 
 const MoviePage = () => {
   return (
-    <div>
-      <SearchBar />
+    <section className="container">
       MoviePage
-    </div>
+    </section>
   );
 };
 

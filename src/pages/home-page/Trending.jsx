@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const Trending = () => {
   return (
-    <div>Trending</div>
+    <section className='container'>Trending</section>
   )
 }
 

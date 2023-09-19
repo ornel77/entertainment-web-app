@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const Recommended = () => {
   return (
-    <div>Recommended</div>
+    <section className='container'>Recommended</section>
   )
 }
 

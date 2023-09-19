@@ -1,33 +1,87 @@
 @import '../../../variables';
 
 
-/* -------------------------------------------------------------------------- */
-/*                                   NAVBAR                                   */
-/* -------------------------------------------------------------------------- */
-
-nav {
-    // margin: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 96px;
+header {
+    padding: 20px;
     height: 100vh;
-    color: $blue-color;
-    border: 3px solid rgb(114, 207, 250);
-    // padding: 20px;
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 96px;
+        height: 100%;
+        background-color: $blue-color;
+        padding: 32px 20px;
+        border-radius: 20px;
 
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 32px;
+
+            a {
+                .icon {
+                    transition: all 300ms;
+                }
+                &:hover .icon {
+                    fill: $accent-color;
+
+                }
+                &.active .icon {
+                    fill: $white
+                }
+            }
+        }
+
+        .login {
+            .avatar {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid $white;
+            }
+        }
+    }
 }
+
 
 /* -------------------------------------------------------------------------- */
-/*                                   OUTLET                                   */
+/*                                MEDIA QUERIES                               */
 /* -------------------------------------------------------------------------- */
-.main {
-    display: flex;
-    gap: 20px;
+@media screen and (max-width: 900px) {
+    header {
+        height: 100px;
+        width: 100%;
+        margin-bottom: 16px;
+        nav {
+            width: 100%;
+            flex-direction: initial;
+
+            .links {
+                flex-direction: initial;
+            }
+        }
+    }
 }
 
-.pages {
-    width: 100%;
-    border: 3px solid salmon;
-
+@media screen and (max-width: 400px) {
+    header {
+        padding: 0px;
+        height: 56px;
+        margin-bottom: 16px;
+        nav {
+            height: 56px;
+            .links {
+                gap: 18px;
+                align-items: center;
+            }
+        }
+    }
 }
+
+
 
