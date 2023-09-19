@@ -26,11 +26,13 @@ ul {
   list-style: none;
 }
 
-// .temp {
-//   display: grid;
-//   place-items: center;
-//   font-size: 64px;
-//   background-color: $gray-color;
-//   border: 3px solid salmon;
-//   width: 100%;
-// }
+input {
+  all: unset;
+  // background-color: transparent;
+  // outline: none;
+  // border: 0;
+}
+
+.container {
+  // margin: 64px 36px;
+}

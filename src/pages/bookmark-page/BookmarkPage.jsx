@@ -2,9 +2,9 @@
 
 const BookmarkPage = () => {
   return (
-    <div>
+    <section className="container">
       BookmarkPage
-    </div>
+    </section>
   );
 };
 

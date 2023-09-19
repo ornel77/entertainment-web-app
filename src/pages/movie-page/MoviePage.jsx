@@ -2,9 +2,9 @@
 
 const MoviePage = () => {
   return (
-    <div>
+    <section className="container">
       MoviePage
-    </div>
+    </section>
   );
 };
 

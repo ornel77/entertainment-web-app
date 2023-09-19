@@ -12,7 +12,7 @@ header {
         width: 96px;
         height: 100%;
         background-color: $blue-color;
-        padding: 32px 10px;
+        padding: 32px 20px;
         border-radius: 20px;
 
 
@@ -56,7 +56,7 @@ header {
     header {
         height: 100px;
         width: 100%;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
         nav {
             width: 100%;
             flex-direction: initial;
@@ -72,7 +72,9 @@ header {
     header {
         padding: 0px;
         height: 56px;
+        margin-bottom: 16px;
         nav {
+            height: 56px;
             .links {
                 gap: 18px;
                 align-items: center;

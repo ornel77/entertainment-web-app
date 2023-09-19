@@ -1,6 +1,56 @@
 @import '../../../variables';
 
 .search-container {
-    border: 3px solid saddlebrown;
-    height: 100px;
+    height: 16vh;
+    padding-top: 64px;
+    margin-bottom: 32px;
+
+    form {
+        width: 100%;
+
+        label {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+
+            .search-bar {
+                font-size: 32px;
+                width: 100%;
+                caret-color: $accent-color;
+                padding: 14px 0;
+                cursor: pointer;
+
+                &:focus {
+                    border-bottom: 1px solid $gray-color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .search-container {
+        padding-top: 0;
+        margin: 34px 20px;
+        height: initial;
+    }
+ }
+
+ @media screen and (max-width: 400px) {
+    .search-container {
+        form {
+            label {
+                gap: 16px;
+                svg {
+                    width: 24px;
+                    height: 24px;
+                }
+                .search-bar {
+                    font-size: 16px;
+                    font-weight: lighter;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
