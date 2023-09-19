@@ -1,0 +1,45 @@
+@import '../../../variables';
+
+.trend-card-container {
+    // width: 470px;
+    // height: 230px;
+    position: relative;
+
+    .thumbnail {
+        display: block;
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+        width: 470px;
+    }
+
+    .bookmark-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 24px 24px 0 0;
+    }
+
+    .details {
+        position: absolute;
+        bottom: 0;
+        margin: 0 0 24px 24px;
+        .row-details {
+            display: flex;
+            align-items: center;
+            color: #ffffffbf;
+            gap: 8px;
+
+            .category {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+            }
+        }
+
+        .title {
+            font-size: 24px;
+        }
+    }
+}
+

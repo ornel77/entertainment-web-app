@@ -1,13 +1,15 @@
-import Navbar from '../../components/navbar/Navbar';
-import { Outlet } from 'react-router-dom';
+import Navbar from "../../components/navbar/Navbar";
+import { Outlet } from "react-router-dom";
 
-import './Root.scss';
-import SearchBar from '../../components/searchbar/SearchBar';
+import "./Root.scss";
+import SearchBar from "../../components/searchbar/SearchBar";
+
 const Root = () => {
+  
   return (
-    <section className='root'>
+    <section className="root">
       <Navbar />
-      <main className='pages'>
+      <main className="pages">
         <SearchBar />
         <Outlet />
       </main>

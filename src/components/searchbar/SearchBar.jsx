@@ -1,9 +1,21 @@
+import { useState } from 'react';
+import { setResult } from '../../store/inputSlice';
 import './SearchBar.scss';
+import { useDispatch } from 'react-redux';
 
 const SearchBar = () => {
+  const dispatch = useDispatch()
+  const [inputValue, setInputValue] = useState("")
+
+  const handleChange = (e) => {
+    setInputValue(e.target.value)
+  }
+  
   const handleSubmit = (e) => {
     e.preventDefault()
+    dispatch(setResult(inputValue))
   }
+
   return (
     <section className='container search-container'>
       <form onSubmit={handleSubmit}>
@@ -20,9 +32,11 @@ const SearchBar = () => {
             id='inputSearch'
             placeholder='Search for movies or TV series'
             className='search-bar'
+            onChange={handleChange}
           />
         </label>
       </form>
+      <p> </p>
     </section>
   );
 };
