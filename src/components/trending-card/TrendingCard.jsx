@@ -5,6 +5,9 @@ import Dot from '../../assets/dot.svg';
 import './TrendingCard.scss';
 import { useState } from 'react';
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+
 const TrendingCard = ({ trending }) => {
   const [isBookmarked, setIsBookmarked] = useState(trending.isBookmarked)
   const handleBookmark = () => {
@@ -14,7 +17,7 @@ const TrendingCard = ({ trending }) => {
   console.log(trending.isBookmarked);
 
   return (
-    <article className='trend-card-container'>
+    <SwiperSlide className='trend-card-container'>
       <img
         src={trending.thumbnail?.trending?.large}
         alt=''
@@ -60,7 +63,7 @@ const TrendingCard = ({ trending }) => {
         </div>
         <h3 className='title'> {trending.title} </h3>
       </div>
-    </article>
+    </SwiperSlide>
   );
 };
 
