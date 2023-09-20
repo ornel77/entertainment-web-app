@@ -8,12 +8,16 @@ const Trending = () => {
     setTrendData(data.filter(elmt => elmt.isTrending === true))
   }, [])
   return (
-    <section className='container trending-container'>
-      {
+    <section className='container'>
+      <h2>Trending</h2>
+      <div className="trending-container">
+        {
         trendData.map(elmt => (
           <TrendingCard key={elmt.title}  trending={elmt}/>
         ))
       }
+      </div>
+      
     </section>
   )
 }

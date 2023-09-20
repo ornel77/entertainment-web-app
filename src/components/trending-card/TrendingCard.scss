@@ -16,7 +16,28 @@
         position: absolute;
         top: 0;
         right: 0;
-        margin: 24px 24px 0 0;
+        margin: 16px 24px 0 0;
+
+        .btn-book {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: rgba(16, 20, 30, 0.5);
+            transition: all 300ms ease-out;
+
+            &:hover {
+                background-color: $white;
+            }
+
+
+            &:hover path {
+                stroke: black;
+            }
+        }
     }
 
     .details {
@@ -28,6 +49,7 @@
             align-items: center;
             color: #ffffffbf;
             gap: 8px;
+            font-size: 15px;
 
             .category {
                 display: flex;
@@ -39,6 +61,7 @@
 
         .title {
             font-size: 24px;
+            font-weight: 600;
         }
     }
 }
